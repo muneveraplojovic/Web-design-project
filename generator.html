@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="pocetna.css" />
+    <script src="generator.js"></script>
     <title>PasswordInator</title>
   </head>
   <body>
@@ -30,7 +31,6 @@
               <li><a href="servisi.html">O NAMA</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="login-rs.html">LOGIN</a></li>
-
             </ul>
           </div>
         </div>
@@ -66,14 +66,14 @@
                 name="password"
                 placeholder="generisana lozinka..."
                 id="passw"
+                readonly
               />
               <div class="btns">
-                <button id="generateBtn">Generisi</button>
-                <!-- onclick=fetchDataFromAPI(apiUrl) 
-                ovo je billo unutar ovog gornjeg buttona ali ne mogu da ga ostatim tu
-                dok ne vidim kako se radi tacno
-                -->
-                <button id="copyBtn">Kopiraj</button>
+                <button id="generateBtn" onclick="generatePassword()">
+                  Generisi
+                </button>
+
+                <button id="copyBtn" onclick="copyPassword()">Kopiraj</button>
               </div>
             </div>
           </div>
@@ -82,33 +82,30 @@
           <div class="saveti"><h4>SAVETI</h4></div>
           <div class="tips">
             <div class="card1">
-              <h4>LOREM, IPSUM DOLOR.</h4>
+              <h4>KORISCENJE JAKE LOZINKE</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit.
+                Kreiranje jake lozinke ključno je za zaštitu vaših online
+                naloga. Kombinacija slova, brojeva i posebnih znakova povećava
+                sigurnost vaše lozinke. Izaberite nešto što je teško pogoditi,
+                ali lako zapamtiti za vas.
               </p>
             </div>
             <div class="card2">
-              <h4>LOREM, IPSUM DOLOR.</h4>
+              <h4>REDOVNA PROMENA LOZINKE</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit.
+                Da biste osigurali sigurnost svojih online naloga, redovno
+                menjajte svoje lozinke. Promena lozinke na svakih nekoliko
+                meseci sprečava neovlašćeni pristup vašim podacima i smanjuje
+                rizik od hakerskih napada.
               </p>
             </div>
             <div class="card3">
-              <h4>LOREM, IPSUM DOLOR.</h4>
+              <h4>VISESTRUKA AUTENTIFIKACIJA</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit.
+                Uključite višestruku autentifikaciju (2FA) gde je to moguće, jer
+                to dodaje dodatni sloj sigurnosti vašem nalogu. Ovo može
+                uključivati korišćenje SMS koda, aplikacije za autentifikaciju
+                ili fizičkog uređaja za verifikaciju.
               </p>
             </div>
           </div>

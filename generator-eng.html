@@ -22,13 +22,14 @@
         <div class="col-10">
           <div class="navig">
             <ul>
-              <li><a href="pocetna-eng.html" >HOME PAGE</a></li>
-              <li><a href="generator-eng.html" style="color: gray">GENERATOR</a></li>
+              <li><a href="pocetna-eng.html">HOME PAGE</a></li>
+              <li>
+                <a href="generator-eng.html" style="color: gray">GENERATOR</a>
+              </li>
               <li><a href="kontakt-eng.html">CONTACT</a></li>
-              <li><a href="servisi-eng.html" >ABOUT US</a></li>
+              <li><a href="servisi-eng.html">ABOUT US</a></li>
               <li><a href="faq-eng.html">FAQ</a></li>
               <li><a href="login-rs.html">LOGIN</a></li>
-
             </ul>
           </div>
         </div>
@@ -56,14 +57,14 @@
                 name="password"
                 placeholder="generated password..."
                 id="passw"
+                readonly
               />
               <div class="btns">
-                <button id="generateBtn">Generate</button>
-                <!-- onclick=fetchDataFromAPI(apiUrl) 
-                ovo je billo unutar ovog gornjeg buttona ali ne mogu da ga ostatim tu
-                dok ne vidim kako se radi tacno
-                -->
-                <button id="copyBtn">Copy</button>
+                <button id="generateBtn" onclick="generatePassword()">
+                  Generate
+                </button>
+
+                <button id="copyBtn" onclick="copyPassword()">Copy</button>
               </div>
             </div>
           </div>
@@ -72,33 +73,30 @@
           <div class="saveti"><h4>TIPS</h4></div>
           <div class="tips">
             <div class="card1">
-              <h4>LOREM, IPSUM DOLOR.</h4>
+              <h4>USING A STRONG PASSWORD</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit.
+                Creating a strong password is crucial for protecting your online
+                accounts. A combination of letters, numbers, and special
+                characters enhances the security of your password. Choose
+                something that is hard to guess but easy to remember for you.
               </p>
             </div>
             <div class="card2">
-              <h4>LOREM, IPSUM DOLOR.</h4>
+              <h4>REGULAR PASSWORD CHANGES</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit.
+                To ensure the security of your online accounts, regularly change
+                your passwords. Changing your password every few months prevents
+                unauthorized access to your data and reduces the risk of hacking
+                attacks.
               </p>
             </div>
             <div class="card3">
-              <h4>LOREM, IPSUM DOLOR.</h4>
+              <h4>2FA AUTHENTICATION</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Distinctio, dignissimos. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit.
+                Enable multi-factor authentication (2FA) wherever possible, as
+                it adds an extra layer of security to your account. This may
+                include using an SMS code, authentication app, or physical
+                verification device.
               </p>
             </div>
           </div>

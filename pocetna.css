@@ -269,7 +269,9 @@ body {
   height: 40vh;
   align-items: center;
 }
-
+.passw:read-only{
+  border: none;
+}
 .pass {
   display: flex;
   flex-direction: column;
@@ -322,6 +324,7 @@ body {
   border: none;
   border-radius: 5px;
   padding: 5px 0;
+  letter-spacing: 1px;
 }
 #generateBtn:hover,
 #copyBtn:hover {
@@ -359,7 +362,7 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   box-shadow: 0px 0px 15px 0px rgb(25, 92, 158);
 
@@ -373,6 +376,7 @@ body {
 .card2 p,
 .card3 p {
   font-size: small;
+  height: 60%;
 }
 /* password generator end*/
 
