@@ -269,7 +269,7 @@ body {
   height: 40vh;
   align-items: center;
 }
-.passw:read-only{
+.passw:read-only {
   border: none;
 }
 .pass {
@@ -285,14 +285,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:#001932;
+  background-color: #001932;
   border-radius: 30px;
   padding: 0;
   margin: 0;
   width: 40%;
   color: white;
   box-shadow: 0px 0px 15px 0px rgb(25, 92, 158);
-
 }
 .password h4 {
   margin-bottom: 20px;
@@ -354,7 +353,7 @@ body {
 .card1,
 .card2,
 .card3 {
-  background-color:#001932;
+  background-color: #001932;
   width: 400px;
   border-radius: 30px;
   height: 200px;
@@ -365,11 +364,11 @@ body {
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 0px 0px 15px 0px rgb(25, 92, 158);
-
 }
 .card1:hover,
 .card2:hover,
-.card3:hover, .password:hover {
+.card3:hover,
+.password:hover {
   background-color: #011d38;
 }
 .card1 p,
@@ -442,7 +441,6 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 15px 0px rgb(25, 92, 158);
-
 }
 
 .poruka {
@@ -463,7 +461,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
 }
 .send {
   display: flex;
@@ -471,28 +468,27 @@ body {
   align-items: center;
   width: 100%;
 }
-.send button{
+.send button {
   width: 50%;
   padding: 10px;
 }
 
-.kolona-d input, .kolona-l input {
+.kolona-d input,
+.kolona-l input {
   border: none;
   margin-bottom: 10px;
   width: 90%;
   letter-spacing: 1px;
-  padding: 5px 10px;  
+  padding: 5px 10px;
   border-radius: 5px;
-
 }
 .poruka input {
   width: 100%;
   letter-spacing: 1px;
-  padding: 5px 10px; 
+  padding: 5px 10px;
   height: 70px;
   border: none;
   border-radius: 5px;
- 
 }
 .message {
   background-color: #001f3f;
@@ -501,7 +497,6 @@ body {
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
-  
 }
 
 @media (max-width: 768px) {
@@ -575,62 +570,71 @@ body {
 
 /* servisi start */
 
-.important, .services{
+.important,
+.services {
   color: aliceblue;
   width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.services{
+.services {
   color: aliceblue;
   width: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.service, .imp-text{
-  width: 70%;
+.service,
+.imp-text {
+  width: 80%;
 }
 
-.imp-text{
+.imp-text {
   background-color: #001932;
   height: 70%;
-  width: 50%;
+  width: 70%;
   padding: 40px;
   border: none;
   border-radius: 10px;
 }
-.first-s, .second-s, .third-s{
+.first-s,
+.second-s,
+.third-s {
   background-color: #001932;
-  height: 150px;
+  height: 15%;
   width: 100%;
   border-radius: 10px;
   border: none;
   margin: 10px;
   padding: 20px;
 }
-.s-1, .s-2,.s-3{
+.s-1,
+.s-2,
+.s-3 {
   display: flex;
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.service img {
+margin: 0 10px;
 }
 /* servisi end */
 
-
-
 /* login start */
 
-.login-form{
+.login-form {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
 }
-.login{
+.login {
   color: white;
   background-color: #001932;
-  width:25%;
+  width: 25%;
   height: 55%;
   display: flex;
   justify-content: space-between;
@@ -640,27 +644,26 @@ body {
   border-radius: 10px;
   letter-spacing: 1px;
   box-shadow: 0px 0px 15px 0px rgb(25, 92, 158);
-  
 }
-.login h3{
+.login h3 {
   text-align: center;
   letter-spacing: 2px;
 }
-.login input{
+.login input {
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
   padding: 5px;
 }
-.login h6{
+.login h6 {
   margin-bottom: 0;
 }
-.login-btn{
+.login-btn {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.login-btn button{
+.login-btn button {
   background-color: #01274d;
   color: aliceblue;
   border: none;
@@ -674,16 +677,16 @@ body {
 }
 /* login end */
 
-
 /* faq start */
 
-.questions{
+.questions {
   color: aliceblue;
   display: flex;
   width: 100%;
 }
 
-.left-picture, .faq-form{
+.left-picture,
+.faq-form {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -691,12 +694,15 @@ body {
   flex-direction: column;
 }
 
-.faq-form{
+.faq-form {
   padding: 0 50px;
   /* background-color: aqua; */
 }
 
-.q-1, .q-2, .q-3, .q-4{
+.q-1,
+.q-2,
+.q-3,
+.q-4 {
   background-color: #001932;
   margin: 10px;
   padding: 5px 10px;
@@ -707,14 +713,14 @@ body {
   align-items: center;
   border-radius: 10px;
 }
-.faq-form p{
+.faq-form p {
   width: 100%;
   display: none;
 }
-.faq-form h6{
+.faq-form h6 {
   width: 80%;
 }
-.faq-form .znak{
+.faq-form .znak {
   width: 20%;
   padding: 0;
 }
