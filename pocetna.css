@@ -717,12 +717,16 @@ margin: 0 10px;
   width: 100%;
   display: none;
 }
-.faq-form h6 {
+.q-1 h6{
   width: 80%;
 }
-.faq-form .znak {
+.znak{
+  margin: 0;
   width: 20%;
-  padding: 0;
+}
+
+.pitanja{
+  width: 80%;
 }
 
 /* faq end */
