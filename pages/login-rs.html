@@ -9,7 +9,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="pocetna.css" />
+    <link rel="stylesheet" href="../style/pocetna.css" />
     <title>PasswordInator</title>
   </head>
   <body>
@@ -18,14 +18,14 @@
       <div class="row" id="nav">
         <div class="col-1 sm-6">
           <a href="pocetna.html">
-            <img src="logo.png" alt="logo" width="100px" class="logo" />
+            <img src="../pictures/logo.png" alt="logo" width="100px" class="logo" />
           </a>
         </div>
         <div class="col-10"></div>
         <div class="col-1">
           <div class="eng">
             <a
-              href="message-sent.html"
+              href="login-eng.html"
               style="
                 .eng:hover {
                   color: gray;
@@ -45,16 +45,18 @@
       <!--  main start -->
 
       <div class="row" id="main">
-        <h1
-          style="
-            color: aliceblue;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          PORUKA JE POSLANA
-        </h1>
+        <div class="login-form">
+          <div class="login">
+            <h3>PRIJAVA</h3>
+            <h6>KORISNICKO IME:</h6>
+            <input type="text" placeholder="Unesite vase korisnicko ime..." />
+            <h6>LOZINKA:</h6>
+            <input type="text" placeholder="Unesite vasu lozinku..." />
+            <div class="login-btn">
+              <button>PRIJAVITE SE</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!--  main end -->

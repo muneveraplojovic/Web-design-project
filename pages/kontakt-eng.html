@@ -9,7 +9,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="pocetna.css" />
+    <link rel="stylesheet" href="../style/pocetna.css" />
     <title>PasswordInator</title>
   </head>
   <body>
@@ -17,33 +17,27 @@
       <!-- navigation start-->
       <div class="row" id="nav">
         <div class="col-1 sm-6">
-          <a href="pocetna.html">
-            <img src="logo.png" alt="logo" width="100px" class="logo" />
+          <a href="pocetna-eng.html">
+            <img src="../pictures/logo.png" alt="logo" width="100px" class="logo" />
           </a>
         </div>
         <div class="col-10">
           <div class="navig">
             <ul>
-              <li><a href="pocetna.html">POCETNA</a></li>
-              <li><a href="generator.html">GENERATOR</a></li>
-              <li><a href="kontakt.html" style="color: gray">KONTAKT</a></li>
-              <li><a href="o-nama.html">O NAMA</a></li>
-              <li><a href="faq.html">PITANJA</a></li>
-              <li><a href="login-rs.html">PRIJAVA</a></li>
+              <li><a href="pocetna-eng.html">HOME PAGE</a></li>
+              <li><a href="generator-eng.html">GENERATOR</a></li>
+              <li>
+                <a href="kontakt-eng.html" style="color: gray">CONTACT</a>
+              </li>
+              <li><a href="o-nama-eng.html">ABOUT US</a></li>
+              <li><a href="faq-eng.html">FAQ</a></li>
+              <li><a href="login-eng.html">LOGIN</a></li>
             </ul>
           </div>
         </div>
         <div class="col-1">
           <div class="eng">
-            <a
-              href="kontakt-eng.html"
-              style="
-                .eng:hover {
-                  color: gray;
-                }
-              "
-              >EN</a
-            >
+            <a href="kontakt.html">RS</a>
           </div>
         </div>
 
@@ -54,19 +48,18 @@
       <!-- navigation end -->
 
       <!--  main start -->
-
       <div class="row" id="main" class="main2">
         <div class="col-12">
           <div class="head">
-            <h6 style="margin-top: 15px; letter-spacing: 1px">
-              15,372 sajtova je hakovano svakog dana
+            <h6 style="margin-top: 15px">
+              15,372 websites are hacked every day.
             </h6>
-            <p class="ltr-sp">Nemojte biti sledeci: mi vam mozemo pomoci!</p>
+            <p>Don't be next: we can help you!</p>
           </div>
         </div>
         <div class="col-12">
           <div class="touch">
-            <h4>OSTANIMO U KONTAKTU</h4>
+            <h4>STAY CONNECTED</h4>
           </div>
         </div>
 
@@ -75,14 +68,14 @@
             <div class="kontakt-l">
               <div class="contact">
                 <div class="inside-left">
-                  <h4>Kontakt e-mail:</h4>
+                  <h4>Contact Email:</h4>
                   <p>info@mail.com</p>
                   <p>contact@yahoo.com</p>
                 </div>
                 <div class="inside-right">
-                  <h4>Kontakt telefonom:</h4>
-                  <p>Broj mobilnog: +38163123456</p>
-                  <p>Broj fax-a: 0200114455</p>
+                  <h4>Contact by Phone:</h4>
+                  <p>Mobile Number: +38163123456</p>
+                  <p>Fax Number: 0200114455</p>
                 </div>
               </div>
               <div class="location">
@@ -91,7 +84,7 @@
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.305952650386!2d-123.02676582377093!3d49.23268827138533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486768d08704b11%3A0xabb387e169f4ac2c!2sCyberSecurity%20Brain!5e0!3m2!1ssr!2srs!4v1706248838672!5m2!1ssr!2srs"
                   width="500"
                   height="250"
-                  style="border: 0; border-radius: 5px"
+                  style="border: 0"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -102,35 +95,39 @@
             <div class="kontakt-d">
               <div class="form-d">
                 <div class="poruka">
-                  <h4>TVOJA PORUKA:</h4>
-                  <input type="text" placeholder="Tvoja poruka..." />
+                  <h4>YOUR MESSAGE</h4>
+                  <input
+                    type="text"
+                    placeholder="Your message...
+                  "
+                  />
                 </div>
 
                 <div class="kolone">
                   <div class="kolona-l">
-                    <h5 style="margin-top: 20px">IME:</h5>
-                    <input type="text" placeholder="Vase ime" required />
-                    <h5>PREZIME:</h5>
-                    <input type="text" placeholder="Vase prezime" required />
+                    <h5 style="margin-top: 20px">NAME:</h5>
+                    <input type="text" placeholder="Your name" required />
+                    <h5>SURNAME:</h5>
+                    <input type="text" placeholder="Your surname" required />
                   </div>
                   <div class="kolona-d">
-                    <h5 style="margin-top: 20px">BROJ TELEFONA:</h5>
+                    <h5 style="margin-top: 20px">PHONE NUMBER:</h5>
                     <input
                       type="text"
-                      placeholder="Vas broj telefona"
+                      placeholder="Your phone number"
                       required
                     />
                     <h5>MAIL:</h5>
-                    <input type="text" placeholder="Vas mail" required />
+                    <input type="text" placeholder="Your mail" required />
                   </div>
                 </div>
                 <div class="send">
                   <button class="message">
                     <a
-                      href="poruka-poslata.html"
+                      href="message-sent.html"
                       style="text-decoration: none; color: aliceblue"
                     >
-                      Posalji poruku
+                      Send message
                     </a>
                   </button>
                 </div>
@@ -139,7 +136,6 @@
           </div>
         </div>
       </div>
-
       <!--  main eng -->
       <!--  footer start -->
 
