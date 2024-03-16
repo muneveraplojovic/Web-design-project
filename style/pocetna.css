@@ -355,15 +355,7 @@ body {
 /* password generator end*/
 
 /*contact main start*/
-.head {
-  height: 10vh;
-  /* background-color: #242d92; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: aliceblue;
-}
+
 
 .forma {
   height: 65vh;
@@ -473,7 +465,7 @@ body {
   border-radius: 5px;
   padding: 5px 10px;
 }
-
+/* 
 @media (max-width: 768px) {
   .head {
     height: 15vh;
@@ -540,7 +532,7 @@ body {
   #main {
     height: 150vh;
   }
-}
+} */
 /*contact main end*/
 
 /* servisi start */

@@ -1,0 +1,72 @@
+@media (max-width: 425px) {
+  #main {
+    height: 220vh;
+  }
+  #nav {
+    margin-bottom: 10px;
+  }
+  #naslov {
+    height: 30vh;
+  }
+  .forma {
+    display: flex;
+    flex-direction: column;
+    height: 180vh;
+  }
+  .kontakt-l {
+    width: 100%;
+    height: 100vh;
+  }
+  .contact {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .inside-left {
+    margin-bottom: 10px;
+  }
+  .location {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #loc {
+    width: 90%;
+    height: 80%;
+  }
+  .kontakt-d {
+    width: 100%;
+    height: 100vh;
+  }
+  .form-d {
+    height: 90%;
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .form-d h5,
+  .poruka h4 {
+    font-size: medium;
+  }
+  .kolone {
+    flex-direction: column;
+    height: 70%;
+  }
+  .kolona-l {
+    width: 100%;
+  }
+  .kolona-l input,
+  .kolona-d input {
+    width: 100%;
+  }
+  .kolona-d {
+    width: 100%;
+  }
+  .poruka {
+    width: 100%;
+    height: 20%;
+  }
+}
