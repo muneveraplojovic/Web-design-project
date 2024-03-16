@@ -1,0 +1,32 @@
+@media (max-width: 425px) {
+  #main {
+    width: 120%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+  }
+  .left-picture {
+    width: 100%;
+    height: 50vh;
+  }
+  .left-picture img {
+    width: 100%;
+  }
+  .questions {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq-form {
+    width: 100%;
+    height: 100vh;
+  }
+  .q-1,
+  .q-2,
+  .q-3,
+  .q-4 {
+    width: 300px;
+  }
+  #footer {
+    width: 120%;
+  }
+}
