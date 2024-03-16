@@ -139,6 +139,7 @@ body {
 #main {
   height: 80vh;
 }
+
 #text {
   width: 50%;
   display: flex;
@@ -171,34 +172,7 @@ body {
 #ph {
   width: 300px;
 }
-/* 
-@media (max-width: 768px) {
-  #main {
-    height: 150vh;
-  }
-  #text {
-    width: 100%;
-    height: 50%;
-  }
-  .text {
-    width: 100%;
-    height: 50vh;
-    padding: 30px;
-    margin-top: 20px;
-    text-align: left;
-  }
 
-  #photo {
-    width: 100%;
-    height: 50vh;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  #ph {
-    width: 250px;
-  }
-} */
 
 #naslov {
   color: rgb(201, 195, 224);
@@ -261,7 +235,7 @@ body {
 }
 
 /* password generator start*/
-.password h3 {
+.password h4 {
   text-align: center;
 }
 #password {

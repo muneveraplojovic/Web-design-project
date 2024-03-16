@@ -1,0 +1,65 @@
+@media (max-width: 425px) {
+  #main {
+    height: 220vh;
+    width: 150%;
+  }
+  .generator {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #password {
+    height: 70vh;
+  }
+ 
+  .password {
+    width: 100%;
+    height: 60%;
+  }
+  #passw{
+    padding: 10px 0;
+  }
+  .pass input {
+    margin: 10px 0;
+  }
+  .pass button {
+    margin: 0 10px;
+  }
+  #generateBtn,
+  #copyBtn {
+    font-size:large;
+  }
+  #tips {
+    width: 100%;
+    height: 150vh;
+  }
+  .saveti {
+    width: 30%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid white;
+  }
+  .tips {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+  }
+  .card1 p,
+  .card2 p,
+  .card3 p {
+    font-size: medium;
+  }
+  #footer {
+    width: 150%;
+  }
+}
