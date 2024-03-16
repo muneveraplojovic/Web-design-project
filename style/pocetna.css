@@ -171,6 +171,7 @@ body {
 #ph {
   width: 300px;
 }
+/* 
 @media (max-width: 768px) {
   #main {
     height: 150vh;
@@ -197,7 +198,7 @@ body {
   #ph {
     width: 250px;
   }
-}
+} */
 
 #naslov {
   color: rgb(201, 195, 224);
