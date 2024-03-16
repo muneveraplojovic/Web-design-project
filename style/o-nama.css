@@ -1,0 +1,43 @@
+@media (max-width: 425px) {
+  #main {
+    width: 120%;
+    height: 220vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .important, .services {
+    width: 100%;
+    height: 60vh;
+  }
+  .imp-text {
+    width: 100%;
+    height: 65vh;
+    font-size:14px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .services {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+  }
+  .service {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .s-1 img, .s-3 img{
+    margin-left: 0;
+  }
+  .s-2 img{
+    margin-right: 0;
+  }
+  #footer {
+    width: 120%;
+  }
+}
