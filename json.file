@@ -1,7 +1,7 @@
 {
-   { "username":"munnevera",
-    "password-normal":"munnevera",
-    "hashovana-lozinka":"eerdfghjkopi98765r4ewrertj"},
-    {}
+   { "username": Munnevera",
+    "hash-pass": "8323913d228464eb5a155add4d062591"},
+   {
+     "username":"Maja",
+     "hash-pass":"afb16009c37c8db88beb7c181573349e"}
 }
-heshovane lozinke
