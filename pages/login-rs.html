@@ -102,7 +102,7 @@
       function login(username, password) {
         var hashedPass = CryptoJS.MD5(password).toString();
 
-        fetch("https://")
+        fetch("https://password-inator.netlify.app/json/users.json")
           .then((res) => {
             if (!res.ok) {
               throw new Error(`HTTP error! Status: ${res.status}`);
@@ -121,7 +121,7 @@
                 localStorage.setItem("logged_in", true);
 
                 window.location.href =
-                  "https://password-inator.netlify.app/json/users.json";
+                  "https://password-inator.netlify.app/pages/generator";
                 exist = true;
                 break;
               }
