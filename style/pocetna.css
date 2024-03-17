@@ -327,9 +327,7 @@ body {
   border-radius: 5px;
   border: none;
 }
-.password:hover {
-  background-color: #011d38;
-}
+
 .btns {
   margin-top: 20px;
 }
@@ -389,8 +387,7 @@ body {
 }
 .card1:hover,
 .card2:hover,
-.card3:hover,
-.password:hover {
+.card3:hover{
   background-color: #011d38;
 }
 .card1 p,
