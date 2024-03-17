@@ -1,7 +1,9 @@
 @media (max-width: 425px) {
+  body {
+    width: 100%;
+  }
   #main {
-    height: 220vh;
-    width: 150%;
+    height: 190vh;
   }
   .generator {
     width: 100%;
@@ -9,29 +11,34 @@
     flex-direction: column;
   }
   #password {
-    height: 70vh;
+    height: 60vh;
   }
- 
+
   .password {
     width: 100%;
-    height: 60%;
+    height: 50%;
   }
-  #passw{
+  .password h4 {
+    font-size: smaller;
+  }
+  #passw {
     padding: 10px 0;
   }
   .pass input {
-    margin: 10px 0;
+    margin: 0;
+
+    font-size: small;
   }
   .pass button {
     margin: 0 10px;
   }
   #generateBtn,
   #copyBtn {
-    font-size:large;
+    font-size: small;
   }
   #tips {
     width: 100%;
-    height: 150vh;
+    height: 120vh;
   }
   .saveti {
     width: 30%;
@@ -51,15 +58,20 @@
   .card2,
   .card3 {
     width: 100%;
-    height: 250px;
+    height: 200px;
     margin-bottom: 40px;
   }
   .card1 p,
   .card2 p,
   .card3 p {
+    font-size: small;
+  }
+  .card1 h4,
+  .card2 h4,
+  .card3 h4 {
     font-size: medium;
   }
   #footer {
-    width: 150%;
+    font-size: small;
   }
 }

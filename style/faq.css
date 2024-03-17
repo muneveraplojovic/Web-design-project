@@ -1,4 +1,7 @@
 @media (max-width: 425px) {
+  #nav{
+    width: 110%;
+  }
   #main {
     width: 120%;
     height: 150vh;
