@@ -1,6 +1,5 @@
 @media (max-width: 425px) {
-    #nav{
-    }
+   
     #main{
         height: 100vh;
     }
@@ -17,6 +16,5 @@
         height: 50vh;
 
     }
-    #footer{
-    }
+    
 }

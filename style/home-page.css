@@ -1,6 +1,10 @@
 @media (max-width: 425px) {
+ 
   body {
     width: 100%;
+  }
+  .logo{
+    margin-left: 0;
   }
   #main {
     display: flex;
@@ -8,6 +12,9 @@
     min-height: 150vh;
     justify-content: center;
     align-items: center;
+  }
+  .text{
+    width: 100%;
   }
   .text h2 {
     font-size: medium;

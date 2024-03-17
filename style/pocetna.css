@@ -55,38 +55,70 @@ body {
 .logo:hover {
   cursor: pointer;
 }
-#hamburger {
-width: 100%;
-background-color: #001932;
-z-index: 999;
-border-bottom: 1px solid #032e5a;
-display: none;
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding-left: 20px;
 }
-/* hamburgercic start */
-#hamburger ul li {
-  list-style: none;
-  text-align: center;
-  margin: 10px;
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
-#hamburger ul li a{
-  text-decoration: none;
-  color:white;
-}
-/* .navig{
-} */
-/* hamburgercic end */
-
-@media screen and (max-width: 768px) {
-  .navig {
-    justify-content: center;
-  }
+.navig{
+  min-height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-@media screen and (max-width: 425px) {
-  .navig {
-    display: none;
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link{
+  transition: 0.7s ease;
+}
+@media (max-width: 768px) {
+  
+  .hamburger {
+    display: block;
   }
- 
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color:#011d38;
+    color: white;
+    width: 90%;
+    text-align: center;
+    transform: 0.3s;
+  }
+  .nav-link{
+    padding: 5px 0;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
 }
 
 .statistika {
@@ -188,7 +220,6 @@ display: none;
 #ph {
   width: 300px;
 }
-
 
 #naslov {
   color: rgb(201, 195, 224);
@@ -371,7 +402,6 @@ display: none;
 /* password generator end*/
 
 /*contact main start*/
-
 
 .forma {
   height: 65vh;
@@ -598,10 +628,9 @@ display: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .service img {
-margin: 0 10px;
+  margin: 0 10px;
 }
 /* o nama end */
 
@@ -700,15 +729,15 @@ margin: 0 10px;
   width: 100%;
   display: none;
 }
-.q-1 h6{
+.q-1 h6 {
   width: 80%;
 }
-.znak{
+.znak {
   margin: 0;
   width: 20%;
 }
 
-.pitanja{
+.pitanja {
   width: 80%;
 }
 
