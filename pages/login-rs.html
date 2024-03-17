@@ -117,7 +117,7 @@
                 users.data[i].username == username &&
                 users.data[i].password == hashedPass
               ) {
-                alert("You are logged in");
+                alert("Ulogovani ste!");
                 localStorage.setItem("logged_in", true);
 
                 window.location.href =
@@ -128,7 +128,7 @@
             }
 
             if (!exist) {
-              alert("Invalid login credentials");
+              alert("Neispravni podaci za prijavljivanje");
             }
           })
           .catch((error) => console.error("Unable to fetch data:", error));

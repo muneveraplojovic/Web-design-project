@@ -740,7 +740,12 @@ body {
   padding: 0 50px;
   /* background-color: aqua; */
 }
-
+.q-1 p,
+.q-2 p,
+.q-3 p,
+.q-4 p {
+font-size: small;
+}
 .q-1,
 .q-2,
 .q-3,
@@ -749,7 +754,8 @@ body {
   margin: 10px;
   padding: 5px 10px;
   width: 100%;
-  height: 5rem;
+  height: 7rem;
+  
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -759,7 +765,6 @@ body {
 }
 .faq-form p {
   width: 100%;
-  display: none;
 }
 .q-1 h6 {
   width: 80%;
