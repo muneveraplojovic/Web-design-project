@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel = "icon" href ="../pictures/mini-logo.png">   
+    <link rel="icon" href="../pictures/mini-logo.png" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -12,8 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../style/pocetna.css" />
-    <link rel="stylesheet" href="../style/login.css">
-    <script defer src="../script/hash.js"></script>
+    <link rel="stylesheet" href="../style/login.css" />
 
     <title>PasswordInator</title>
   </head>
@@ -23,7 +22,12 @@
       <div class="row" id="nav">
         <div class="col-1 sm-6">
           <a href="pocetna-eng.html">
-            <img src="../pictures/logo.png" alt="logo" width="100px" class="logo" />
+            <img
+              src="../pictures/logo.png"
+              alt="logo"
+              width="100px"
+              class="logo"
+            />
           </a>
         </div>
         <div class="col-10"></div>
@@ -40,8 +44,6 @@
             >
           </div>
         </div>
-
-        
       </div>
       <!-- navigation end -->
 
@@ -52,11 +54,21 @@
           <div class="login">
             <h3>LOGIN</h3>
             <h6>USERNAME:</h6>
-            <input id="username" type="text" placeholder="Type your username..." />
+            <input
+              id="username"
+              type="text"
+              placeholder="Type your username..."
+            />
             <h6>PASSWORD:</h6>
-            <input id="passwordd" type="password" placeholder="Type your password..." />
+            <input
+              id="passwordd"
+              type="password"
+              placeholder="Type your password..."
+            />
             <div id="login-btn">
-              <button>LOGIN</button>
+              <button id="login-form" onclick="handleSubmit(event)">
+                LOGIN
+              </button>
             </div>
           </div>
         </div>
@@ -74,5 +86,56 @@
       </div>
       <!--  footer end -->
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    ></script>
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("passwordd").value;
+        login(username, password);
+      }
+
+      function login(username, password) {
+        var hashedPass = CryptoJS.MD5(password).toString();
+
+        fetch("https://password-inator.netlify.app/json/users.json")
+          .then((res) => {
+            if (!res.ok) {
+              throw new Error(`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+          })
+          .then((users) => {
+            let exist = false;
+
+            for (let i = 0; i < users.data.length; i++) {
+              if (
+                users.data[i].username == username &&
+                users.data[i].password == hashedPass
+              ) {
+                alert("You are logged in");
+                localStorage.setItem("logged_in", true);
+
+                window.location.href =
+                  "https://password-inator.netlify.app/pages/generator";
+                exist = true;
+                break;
+              }
+            }
+
+            if (!exist) {
+              alert("Invalid login credentials");
+            }
+          })
+          .catch((error) => console.error("Unable to fetch data:", error));
+      }
+      document
+        .getElementById("login-form")
+        .addEventListener("submit", handleSubmit);
+    </script>
   </body>
 </html>
