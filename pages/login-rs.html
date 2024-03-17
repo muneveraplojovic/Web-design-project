@@ -44,8 +44,6 @@
             >
           </div>
         </div>
-
-        
       </div>
       <!-- navigation end -->
 
@@ -56,11 +54,21 @@
           <div class="login">
             <h3>PRIJAVA</h3>
             <h6>KORISNICKO IME:</h6>
-            <input id="username" type="text" placeholder="Unesite vase korisnicko ime..." />
+            <input
+              id="username"
+              type="text"
+              placeholder="Unesite vase korisnicko ime..."
+            />
             <h6>LOZINKA:</h6>
-            <input  id="passwordd" type="password" placeholder="Unesite vasu lozinku..." />
+            <input
+              id="passwordd"
+              type="password"
+              placeholder="Unesite vasu lozinku..."
+            />
             <div id="login-btn">
-              <button id="login-form" onclick="handleSubmit(event)">PRIJAVITE SE</button>
+              <button id="login-form" onclick="handleSubmit(event)">
+                PRIJAVITE SE
+              </button>
             </div>
           </div>
         </div>
@@ -78,7 +86,54 @@
       </div>
       <!--  footer end -->
     </div>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    ></script>
+    <script>
+        function handleSubmit(event) {
+        event.preventDefault();
 
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("passwordd").value;
+        login(username, password);
+      }
+
+      function login(username, password) {
+        var hashedPass = CryptoJS.MD5(password).toString();
+
+        fetch("https://")
+          .then((res) => {
+            if (!res.ok) {
+              throw new Error(`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+          })
+          .then((users) => {
+            let exist = false;
+
+            for (let i = 0; i < users.data.length; i++) {
+              if (
+                users.data[i].username == username &&
+                users.data[i].password == hashedPass
+              ) {
+                alert("You are logged in");
+                localStorage.setItem("logged_in", true);
+
+                window.location.href =
+                  "https://password-inator.netlify.app/json/users.json";
+                exist = true;
+                break;
+              }
+            }
+
+            if (!exist) {
+              alert("Invalid login credentials");
+            }
+          })
+          .catch((error) => console.error("Unable to fetch data:", error));
+      }
+      document.getElementById("login-form").addEventListener("submit", handleSubmit);
+    </script>
   </body>
 </html>
