@@ -19,7 +19,7 @@
   <body>
     <div class="container-fluid">
       <!-- navigation start-->
-      
+
       <div class="row" id="nav">
         <div class="col-6 sm-10">
           <img
@@ -34,15 +34,15 @@
           <div class="navig">
             <ul class="nav-menu">
               <li class="nav-item">
-                <a class="nav-link" href="pocetna.html" 
-                  >POCETNA</a
-                >
+                <a class="nav-link" href="pocetna.html">POCETNA</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="generator.html">GENERATOR</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="kontakt.html" style="color: gray">KONTAKT</a>
+                <a class="nav-link" href="kontakt.html" style="color: gray"
+                  >KONTAKT</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="o-nama.html">O NAMA</a>
@@ -82,12 +82,11 @@
 
       <div class="row" id="main">
         <div class="col-12" id="naslov">
-          
-            <h6 style="margin-top: 15px; letter-spacing: 1px">
-              15,372 sajtova je hakovano svakog dana
-            </h6>
-            <p class="ltr-sp">Nemojte biti sledeci: mi vam mozemo pomoci!</p>
-            <h4>OSTANIMO U KONTAKTU</h4>
+          <h6 style="margin-top: 15px; letter-spacing: 1px">
+            15,372 sajtova je hakovano svakog dana
+          </h6>
+          <p class="ltr-sp">Nemojte biti sledeci: mi vam mozemo pomoci!</p>
+          <h4>OSTANIMO U KONTAKTU</h4>
         </div>
 
         <div class="col-12 sm-12">
@@ -123,25 +122,79 @@
               <div class="form-d">
                 <div class="poruka">
                   <h4>TVOJA PORUKA:</h4>
-                  <input type="text" placeholder="Tvoja poruka..." />
+                  <input
+                    type="text"
+                    id="message"
+                    name="message"
+                    maxlength="255"
+                    oninput="validnaPoruka(this)"
+                    placeholder="Tvoja poruka..."
+                    required
+                  />
+                  <span class="error" id="messageError"></span>
                 </div>
 
                 <div class="kolone">
                   <div class="kolona-l">
                     <h5 style="margin-top: 20px">IME:</h5>
-                    <input type="text" placeholder="Vase ime" required />
-                    <h5>PREZIME:</h5>
-                    <input type="text" placeholder="Vase prezime" required />
-                  </div>
-                  <div class="kolona-d">
-                    <h5 style="margin-top: 20px">BROJ TELEFONA:</h5>
                     <input
+                      id="firstName"
+                      name="firstName"
+                      oninput="validnoIme(this)"
+                      required
                       type="text"
-                      placeholder="Vas broj telefona"
+                      placeholder="Vase ime"
                       required
                     />
+                    <div class="spann">
+                      <span class="error" id="firstNameError"></span>
+                      <span class="error" id="nameLengthError"></span>
+                    </div>
+                    <h5 style="margin-top: 20px">BROJ TELEFONA:</h5>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      pattern="\d{3}/\d{3}-\d{2}-\d{2}"
+                      oninput="validanBroj(this)"
+                      required
+                      placeholder="Vas broj telefona"
+                    />
+                    <div>
+                      <span class="error" id="phoneError"></span>
+                      <p>Fromat: xxx/xxx-xx-xx</p>
+                    </div>
+                  </div>
+                  <div class="kolona-d">
+                    <h5>PREZIME:</h5>
+                    <input
+                      id="lastName"
+                      name="lastName"
+                      oninput="validnoPrezime(this)"
+                      required
+                      type="text"
+                      placeholder="Vase prezime"
+                      required
+                    />
+                    <div class="spann">
+                      <span class="error" id="lastNameError"></span>
+                      <span class="error" id="lastNameLengthError"></span>
+                    </div>
+                   
                     <h5>MAIL:</h5>
-                    <input type="text" placeholder="Vas mail" required />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      oninput="validanMejl(this)"
+                      placeholder="Vas mail"
+                      required
+                    />
+                    <div>
+
+                      <span class="error" id="emailError"></span>
+                    </div>
+
                   </div>
                 </div>
                 <div class="send">
@@ -155,6 +208,10 @@
                   </button>
                 </div>
               </div>
+
+
+
+              
             </div>
           </div>
         </div>
@@ -173,6 +230,5 @@
       <!--  footer end -->
     </div>
     <script defer src="../script/navigation.js"></script>
-
   </body>
 </html>

@@ -125,30 +125,80 @@
             <div class="kontakt-d">
               <div class="form-d">
                 <div class="poruka">
-                  <h4>YOUR MESSAGE</h4>
+                  <h4>YOUR MESSAGE:</h4>
                   <input
                     type="text"
-                    placeholder="Your message...
-                  "
+                    id="message"
+                    name="message"
+                    maxlength="255"
+                    oninput="validnaPoruka(this)"
+                    placeholder="Your message..."
+                    required
                   />
+                  <span class="error" id="messageError"></span>
                 </div>
 
                 <div class="kolone">
                   <div class="kolona-l">
                     <h5 style="margin-top: 20px">NAME:</h5>
-                    <input type="text" placeholder="Your name" required />
-                    <h5>SURNAME:</h5>
-                    <input type="text" placeholder="Your surname" required />
-                  </div>
-                  <div class="kolona-d">
-                    <h5 style="margin-top: 20px">PHONE NUMBER:</h5>
                     <input
+                      id="firstName"
+                      name="firstName"
+                      oninput="validnoIme(this)"
+                      required
                       type="text"
-                      placeholder="Your phone number"
+                      placeholder="Your name"
                       required
                     />
+                    <div class="spann">
+                      <span class="error" id="firstNameError"></span>
+                      <span class="error" id="nameLengthError"></span>
+                    </div>
+                    <h5 style="margin-top: 20px">PHONE NUMBER:</h5>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      pattern="\d{3}/\d{3}-\d{2}-\d{2}"
+                      oninput="validanBroj(this)"
+                      required
+                      placeholder="Your phone number"
+                    />
+                    <div>
+                      <span class="error" id="phoneError"></span>
+                      <p>Fromat: xxx/xxx-xx-xx</p>
+                    </div>
+                  </div>
+                  <div class="kolona-d">
+                    <h5>SURNAME:</h5>
+                    <input
+                      id="lastName"
+                      name="lastName"
+                      oninput="validnoPrezime(this)"
+                      required
+                      type="text"
+                      placeholder="Your surname"
+                      required
+                    />
+                    <div class="spann">
+                      <span class="error" id="lastNameError"></span>
+                      <span class="error" id="lastNameLengthError"></span>
+                    </div>
+                   
                     <h5>MAIL:</h5>
-                    <input type="text" placeholder="Your mail" required />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      oninput="validanMejl(this)"
+                      placeholder="Your email"
+                      required
+                    />
+                    <div>
+
+                      <span class="error" id="emailError"></span>
+                    </div>
+
                   </div>
                 </div>
                 <div class="send">
@@ -157,11 +207,17 @@
                       href="message-sent.html"
                       style="text-decoration: none; color: aliceblue"
                     >
-                      Send message
+                      Posalji poruku
                     </a>
                   </button>
                 </div>
               </div>
+
+
+
+
+
+
             </div>
           </div>
         </div>
