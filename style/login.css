@@ -1,9 +1,7 @@
 @media (max-width: 425px) {
     #nav{
-        width: 100%;
     }
     #main{
-        width: 120%;
         height: 100vh;
     }
     .login-form{
@@ -20,6 +18,5 @@
 
     }
     #footer{
-        width: 120%;
     }
 }
