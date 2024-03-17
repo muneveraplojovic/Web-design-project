@@ -56,11 +56,11 @@
           <div class="login">
             <h3>PRIJAVA</h3>
             <h6>KORISNICKO IME:</h6>
-            <input type="text" placeholder="Unesite vase korisnicko ime..." />
+            <input id="username" type="text" placeholder="Unesite vase korisnicko ime..." />
             <h6>LOZINKA:</h6>
-            <input type="text" placeholder="Unesite vasu lozinku..." />
-            <div class="login-btn">
-              <button>PRIJAVITE SE</button>
+            <input  id="passwordd" type="password" placeholder="Unesite vasu lozinku..." />
+            <div id="login-btn">
+              <button id="login-form" onclick="handleSubmit(event)">PRIJAVITE SE</button>
             </div>
           </div>
         </div>
@@ -78,5 +78,7 @@
       </div>
       <!--  footer end -->
     </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
   </body>
 </html>
