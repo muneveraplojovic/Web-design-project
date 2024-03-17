@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel = "icon" href ="../pictures/mini-logo.png">   
+    <link rel="icon" href="../pictures/mini-logo.png" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -12,53 +12,72 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../style/pocetna.css" />
-    <link rel="stylesheet" href="../style/faq.css">
+    <link rel="stylesheet" href="../style/faq.css" />
     <title>PasswordInator</title>
   </head>
   <body>
     <div class="container-fluid">
       <!-- navigation start-->
+
       <div class="row" id="nav">
-        <div class="col-1 sm-6">
-          <a href="pocetna.html">
+        <div class="col-6 sm-10">
+          <a href="./pocetna.html">
+
             <img
-              src="../pictures/logo.png"
-              alt="logo"
-              width="100px"
-              class="logo"
+            src="../pictures/logo.png"
+            alt="logo"
+            width="100px"
+            class="logo"
             />
           </a>
         </div>
-        <div class="col-10">
-          <div class="navig">
-            <ul>
-              <li><a href="pocetna.html">POCETNA</a></li>
-              <li><a href="generator.html">GENERATOR</a></li>
-              <li><a href="kontakt.html">KONTAKT</a></li>
-              <li><a href="o-nama.html">O NAMA</a></li>
-              <li><a href="faq.html" style="color: gray">PITANJA</a></li>
-              <li><a href="login-rs.html">PRIJAVA</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-1">
-          <div class="eng">
-            <a
-              href="faq-eng.html"
-              style="
-                .eng:hover {
-                  color: gray;
-                }
-              "
-              >EN</a
-            >
-          </div>
-        </div>
 
-        <div class="col sm-6" id="hamburger">
-          <div>///</div>
+        <div class="col-6 sm-2">
+          <div class="navig">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="pocetna.html">POCETNA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="generator.html">GENERATOR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">KONTAKT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="o-nama.html">O NAMA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html" style="color: gray"
+                  >PITANJA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login-rs.html">PRIJAVA</a>
+              </li>
+            </ul>
+            <div class="col-1">
+              <div class="eng">
+                <a
+                  href="pocetna-eng.html"
+                  style="
+                    .eng:hover {
+                      color: gray;
+                    }
+                  "
+                  >EN</a
+                >
+              </div>
+            </div>
+            <div class="col-1 hamburger">
+              <span style="letter-spacing: 2px" class="bar"></span>
+              <span style="letter-spacing: 2px" class="bar"></span>
+              <span style="letter-spacing: 2px" class="bar"></span>
+            </div>
+          </div>
         </div>
       </div>
+
       <!-- navigation end -->
 
       <!--  main start -->
@@ -129,5 +148,6 @@
       </div>
       <!--  footer end -->
     </div>
+    <script defer src="../script/navigation.js"></script>
   </body>
 </html>

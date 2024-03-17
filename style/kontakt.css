@@ -2,6 +2,9 @@
   #main {
     height: 220vh;
   }
+  .logo{
+    margin-left: 0;
+  }
   #nav {
     margin-bottom: 10px;
   }
