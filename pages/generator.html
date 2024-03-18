@@ -20,11 +20,10 @@
   <body>
     <div class="container-fluid">
       <!-- navigation start-->
-      
+
       <div class="row" id="nav">
         <div class="col-6 sm-10">
           <a href="../pages/pocetna.html">
-
             <img
               src="../pictures/logo.png"
               alt="logo"
@@ -37,7 +36,26 @@
         <div class="col-6 sm-2">
           <div class="navig">
             <ul class="nav-menu">
-              
+              <li class="nav-item">
+                <a class="nav-link" href="pocetna-eng.html">POCETNA</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="generator-eng.html"
+                  style="color: gray"
+                  >GENERATOR</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt-eng.html">KONTAKT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="o-nama-eng.html">O NAMA </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq-eng.html">PITANJA</a>
+              </li>
             </ul>
             <div class="col-1">
               <div class="eng">
@@ -67,62 +85,60 @@
 
       <div class="row" id="main">
         <div class="generator">
+          <div class="col-12" id="password">
+            <div class="password">
+              <div class="pass">
+                <h4>GENERISI NASUMICNU LOZINKU</h4>
+                <input
+                  type="text"
+                  name="password"
+                  placeholder="generisana lozinka..."
+                  id="passw"
+                  readonly
+                />
+                <div class="btns">
+                  <button id="generateBtn" onclick="generatePassword()">
+                    Generisi
+                  </button>
 
-        <div class="col-12" id="password">
-          <div class="password">
-            <div class="pass">
-              <h4>GENERISI NASUMICNU LOZINKU</h4>
-              <input
-                type="text"
-                name="password"
-                placeholder="generisana lozinka..."
-                id="passw"
-                readonly
-              />
-              <div class="btns">
-                <button id="generateBtn" onclick="generatePassword()">
-                  Generisi
-                </button>
-
-                <button id="copyBtn" onclick="copyPassword()">Kopiraj</button>
+                  <button id="copyBtn" onclick="copyPassword()">Kopiraj</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" id="tips">
+            <div class="saveti"><h4>SAVETI</h4></div>
+            <div class="tips">
+              <div class="card1">
+                <h4>KORISCENJE JAKE LOZINKE</h4>
+                <p>
+                  Kreiranje jake lozinke ključno je za zaštitu vaših online
+                  naloga. Kombinacija slova, brojeva i posebnih znakova povećava
+                  sigurnost vaše lozinke. Izaberite nešto što je teško pogoditi,
+                  ali lako zapamtiti za vas.
+                </p>
+              </div>
+              <div class="card2">
+                <h4>REDOVNA PROMENA LOZINKE</h4>
+                <p>
+                  Da biste osigurali sigurnost svojih online naloga, redovno
+                  menjajte svoje lozinke. Promena lozinke na svakih nekoliko
+                  meseci sprečava neovlašćeni pristup vašim podacima i smanjuje
+                  rizik od hakerskih napada.
+                </p>
+              </div>
+              <div class="card3">
+                <h4>VISESTRUKA AUTENTIFIKACIJA</h4>
+                <p>
+                  Uključite višestruku autentifikaciju (2FA) gde je to moguće,
+                  jer to dodaje dodatni sloj sigurnosti vašem nalogu. Ovo može
+                  uključivati korišćenje SMS koda, aplikacije za autentifikaciju
+                  ili fizičkog uređaja za verifikaciju.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12" id="tips">
-          <div class="saveti"><h4>SAVETI</h4></div>
-          <div class="tips">
-            <div class="card1">
-              <h4>KORISCENJE JAKE LOZINKE</h4>
-              <p>
-                Kreiranje jake lozinke ključno je za zaštitu vaših online
-                naloga. Kombinacija slova, brojeva i posebnih znakova povećava
-                sigurnost vaše lozinke. Izaberite nešto što je teško pogoditi,
-                ali lako zapamtiti za vas.
-              </p>
-            </div>
-            <div class="card2">
-              <h4>REDOVNA PROMENA LOZINKE</h4>
-              <p>
-                Da biste osigurali sigurnost svojih online naloga, redovno
-                menjajte svoje lozinke. Promena lozinke na svakih nekoliko
-                meseci sprečava neovlašćeni pristup vašim podacima i smanjuje
-                rizik od hakerskih napada.
-              </p>
-            </div>
-            <div class="card3">
-              <h4>VISESTRUKA AUTENTIFIKACIJA</h4>
-              <p>
-                Uključite višestruku autentifikaciju (2FA) gde je to moguće, jer
-                to dodaje dodatni sloj sigurnosti vašem nalogu. Ovo može
-                uključivati korišćenje SMS koda, aplikacije za autentifikaciju
-                ili fizičkog uređaja za verifikaciju.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       </div>
 
       <!--  main eng -->
@@ -137,6 +153,5 @@
       </div>
       <!--  footer end -->
     </div>
-
   </body>
 </html>
