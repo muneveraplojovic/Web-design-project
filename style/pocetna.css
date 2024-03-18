@@ -742,19 +742,17 @@ body {
 }
 .q-1 p,
 .q-2 p,
-.q-3 p,
 .q-4 p {
 font-size: small;
 }
 .q-1,
 .q-2,
-.q-3,
 .q-4 {
   background-color: #001932;
   margin: 10px;
-  padding: 5px 10px;
+  padding: 1px 20px;
   width: 100%;
-  height: 7rem;
+  height: 100px;
   
   display: flex;
   justify-content: center;
