@@ -22,6 +22,9 @@
     justify-content: center;
     flex-direction: column;
   }
+  .imp-text p{
+    font-size: small;
+  }
   .services {
     width: 100%;
     display: flex;
