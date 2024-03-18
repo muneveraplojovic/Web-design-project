@@ -62,7 +62,7 @@
   }
   .kolone {
     flex-direction: column;
-    height: 70%;
+    height: 60%;
   }
   .kolona-l {
     width: 100%;
@@ -87,6 +87,6 @@
     margin-bottom: 5px;
   }
   .send{
-    height: 20%;
+    height: 10%;
   }
 }

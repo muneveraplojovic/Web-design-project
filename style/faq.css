@@ -26,14 +26,13 @@
   }
   .q-1,
   .q-2,
-  .q-3,
   .q-4 {
     width: 300px;
-    height: 60%;
+    height: 90%;
+    padding: 20px;
   }
   .q-1 p,
 .q-2 p,
-.q-3 p,
 .q-4 p{
   font-size: x-small;
 } 

@@ -41,11 +41,11 @@
   }
   #tips {
     width: 100%;
-    height: 120vh;
+    height: 100vh;
   }
   .saveti {
     width: 30%;
-    height: 20%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
