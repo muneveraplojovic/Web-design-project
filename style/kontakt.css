@@ -1,6 +1,6 @@
 @media (max-width: 425px) {
   #main {
-    height: 280vh;
+    height: 230vh;
   }
   .logo{
     margin-left: 0;
@@ -58,7 +58,7 @@
     height: 160vh;
   }
   .form-d {
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     padding: 10px 20px;
     justify-content: space-around;
@@ -89,7 +89,7 @@
   }
   .poruka {
     width: 100%;
-    height: 15vh;
+    height: 10vh;
   }
   .message{
     margin-top: 10px;
