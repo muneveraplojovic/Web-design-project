@@ -43,6 +43,12 @@
     justify-content: center;
     align-items: center;
   }
+  #naslov{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   #loc {
     width: 90%;
     height: 70%;
@@ -52,9 +58,10 @@
     height: 160vh;
   }
   .form-d {
-    height: 90%;
+    height: 110vh;
     width: 100%;
     padding: 10px 20px;
+    justify-content: space-around;
   }
   .form-d h5,
   .poruka h4 {
@@ -62,7 +69,7 @@
   }
   .kolone {
     flex-direction: column;
-    height: 60%;
+    height: 65vh;
   }
   .kolona-l {
     width: 100%;
@@ -71,6 +78,10 @@
   .kolona-d input {
     width: 100%;
   }
+  .kontakt-l{
+    padding: 10px;
+    
+  }
   .kolona-d {
     width: 100%;
     margin-top: 10px;
@@ -78,7 +89,7 @@
   }
   .poruka {
     width: 100%;
-    height: 15%;
+    height: 15vh;
   }
   .message{
     margin-top: 10px;
@@ -87,6 +98,6 @@
     margin-bottom: 5px;
   }
   .send{
-    height: 10%;
+    height: 10vh;
   }
 }

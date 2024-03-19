@@ -30,6 +30,7 @@ function validnoIme(obj) {
     if (obj.value.length > maxLength) {
       document.getElementById("nameLengthError").innerHTML =
         "Cannot exceed 22 characters!";
+        document.getElementById("nameLengthError").style.color = "green";
       obj.style.color = "red";
     } else if (obj[0] == obj.value.match(/^[A-Z]/)) {
       obj.style.color = "red";
