@@ -30,7 +30,7 @@ function validnoIme(obj) {
     if (obj.value.length > maxLength) {
       document.getElementById("nameLengthError").innerHTML =
         "Cannot exceed 22 characters!";
-        document.getElementById("nameLengthError").style.color = "green";
+      document.getElementById("nameLengthError").style.color = "red";
       obj.style.color = "red";
     } else if (obj[0] == obj.value.match(/^[A-Z]/)) {
       obj.style.color = "red";
@@ -65,6 +65,7 @@ function validnoPrezime(obj) {
     if (obj.value.length > maxLength) {
       document.getElementById("lastNameLengthError").innerHTML =
         "Cannot exceed 20 characters!";
+      document.getElementById("lastNameLengthError").style.color = "red";
       obj.style.color = "red";
     } else if (obj[0] == obj.value.match(/^[A-Z]/)) {
       document.getElementById("lastNameError").innerHTML =
@@ -75,9 +76,12 @@ function validnoPrezime(obj) {
     } else if (obj.value.length < 4) {
       document.getElementById("lastNameError").innerHTML =
         "Minimum 4 characters required!";
+      document.getElementById("lastNameError").style.color = "red";
+
       if (obj.value.match(/^[A-Z]{2,3}/)) {
         document.getElementById("lastNameError").innerHTML =
           "Please enter lowercase characters!";
+        document.getElementById("lastNameError").style.color = "red";
       }
       obj.style.color = "red";
     }
@@ -94,7 +98,6 @@ var phoneNumber = document.getElementById("phoneNumber").value;
 var email = document.getElementById("email").value;
 var phoneError = document.getElementById("phoneError");
 var emailError = document.getElementById("emailError");
-var dugme = document.getElementById("dugme").value;
 
 var isValid = true;
 
@@ -119,14 +122,20 @@ function validanMejl(obj) {
 }
 //validan mail kraj
 
-//validan br telefona pcoetaak
+//validan br telefona pocetaak
 function validanBroj(obj) {
   obj.value = obj.value.toString();
   if (obj.value.match(!/^\d{3}\/\d{3}-\d{2}-\d{2}$/)) {
-   
+    if (obj.value.match(/^[a-zA-Z.!*(){}&^#@$/_?|><%+-,;:\s]{1,11}$/)) {
+      obj.style.color = "red";
+      document.getElementById("phoneError").innerHTML = "";
+      return false;
+    }
 
     obj.style.color = "green";
     document.getElementById("phoneNumber").innerHTML = "";
     return true;
   }
 }
+
+//validan br telefona kraj
