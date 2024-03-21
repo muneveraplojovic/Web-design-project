@@ -75,13 +75,12 @@ function validnoPrezime(obj) {
     } else if (obj.value.length < 4) {
       document.getElementById("lastNameError").innerHTML =
         "Unesite minimum 4 karaktera!";
-        document.getElementById("lastNameError").style.color = "red";
+      document.getElementById("lastNameError").style.color = "red";
 
       if (obj.value.match(/^[A-Z]{2,3}/)) {
         document.getElementById("lastNameError").innerHTML =
           "Unesite male karaktere!";
-          document.getElementById("lastNameError").style.color = "red";
-
+        document.getElementById("lastNameError").style.color = "red";
       }
       obj.style.color = "red";
     }
